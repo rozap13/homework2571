@@ -7,10 +7,10 @@ import (
 
 func main() {
 	var input string
-	fmt.Print("Введите целое число: ") // ОШИБКА: осталось старое сообщение
+	fmt.Print("Введите данные: ") // Исправлено
 	_, err := fmt.Scan(&input)
 	if err != nil {
 		log.Fatal(err)
 	}
-	fmt.Printf("Вы ввели число: %s\n", input) // ОШИБКА: осталось "число"
+	fmt.Printf("Вы ввели следующие данные: %s\n", input) // Исправлено
 }
